@@ -23,7 +23,7 @@
 
 ## 🌐 Language
 - 🇺🇸 English
-- 🇸🇦 [العربية](README_AR.md)
+- ar [العربية](README_AR.md)
 
 ---
 
