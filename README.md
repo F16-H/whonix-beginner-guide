@@ -2,7 +2,7 @@
 # Whonix Beginner Guide
 
 <p align="center">
-  <img src="images/banner.png" width="100%" />
+  <img src="images/banner1.png" width="100%" />
 </p>
 
 <h1 align="center">Whonix Beginner Guide</h1>
