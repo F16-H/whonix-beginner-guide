@@ -64,9 +64,9 @@ Official Website:
 https://www.virtualbox.org
 
 ### Example
-![](images/virtualbox-install.png)
-![VirtualBox Setup](https://www.virtualbox.org/wiki/Documentation))
-
+<p align="center">
+  <img src="images/virtualbox-install.gif" width="100%" />
+</p>
 ---
 
 ## Step 2 — Download Whonix
