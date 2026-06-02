@@ -1,9 +1,18 @@
 # Whonix Beginner Guide
 
 A beginner-friendly guide to understanding, installing, and verifying Whonix safely.
-
+![Platform](https://img.shields.io/badge/Platform-Windows-blue)
+![VirtualBox](https://img.shields.io/badge/VirtualBox-Supported-orange)
+![Tor](https://img.shields.io/badge/Tor-Network-purple)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![Language](https://img.shields.io/badge/Languages-English%20%7C%20Arabic-red)
 ---
-
+<p align="center">
+  <a href="#installation">Installation</a> •
+  <a href="#wireshark-verification">Verification</a> •
+  <a href="#security-tips">Security Tips</a> •
+  <a href="#troubleshooting">Troubleshooting</a>
+</p>
 🌐 Language:
 - 🇺🇸 English
 - ar [العربية](README_AR.md)
@@ -50,6 +59,17 @@ https://www.virtualbox.org
 ### Wireshark
 https://www.wireshark.org
 
+## Installation Checklist
+
+- [ ] Install VirtualBox
+- [ ] Download Whonix
+- [ ] Import Gateway
+- [ ] Import Workstation
+- [ ] Start Gateway
+- [ ] Verify Tor Connection
+- [ ] Open Wireshark
+- [ ] Check Traffic
+     
 ---
 
 # VirtualBox Setup
