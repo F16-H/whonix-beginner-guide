@@ -23,7 +23,7 @@
 
 ## 🌐 Language
 - 🇺🇸 English
-- ar [العربية](README_AR.md)
+- 🇯🇴 [العربية](README_AR.md)
 
 ---
 
@@ -268,3 +268,4 @@ This project is intended for educational and privacy-awareness purposes only.
 # Author
 
 Created by Feras Hamamdeh
+
