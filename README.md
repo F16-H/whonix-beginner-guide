@@ -1,65 +1,113 @@
+
 # Whonix Beginner Guide
 
-A beginner-friendly guide to understanding, installing, and verifying Whonix safely.
-![Platform](https://img.shields.io/badge/Platform-Windows-blue)
-![VirtualBox](https://img.shields.io/badge/VirtualBox-Supported-orange)
-![Tor](https://img.shields.io/badge/Tor-Network-purple)
-![Status](https://img.shields.io/badge/Status-Active-success)
-![Language](https://img.shields.io/badge/Languages-English%20%7C%20Arabic-red)
----
 <p align="center">
+  <img src="images/banner.png" width="100%" />
+</p>
+
+<h1 align="center">Whonix Beginner Guide</h1>
+
+<p align="center">
+  A beginner-friendly guide to understanding, installing, and verifying Whonix safely.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Windows-blue">
+  <img src="https://img.shields.io/badge/VirtualBox-Supported-orange">
+  <img src="https://img.shields.io/badge/Tor-Network-purple">
+  <img src="https://img.shields.io/badge/Status-Active-success">
+  <img src="https://img.shields.io/badge/Languages-English%20%7C%20Arabic-red">
+</p>
+
+---
+
+## 🌐 Language
+- 🇺🇸 English
+- 🇸🇦 [العربية](README_AR.md)
+
+---
+
+<p align="center">
+  <a href="#about">About</a> •
   <a href="#installation">Installation</a> •
   <a href="#wireshark-verification">Verification</a> •
   <a href="#security-tips">Security Tips</a> •
   <a href="#troubleshooting">Troubleshooting</a>
 </p>
-🌐 Language:
-- 🇺🇸 English
-- ar [العربية](README_AR.md)
-
----
-
-# Table of Contents
-
-- [About](#about)
-- [What is Whonix](#what-is-whonix)
-- [Installation](#installation)
-- [VirtualBox Setup](#virtualbox-setup)
-- [Wireshark Verification](#wireshark-verification)
-- [Security Tips](#security-tips)
-- [Troubleshooting](#troubleshooting)
-- [Learning Resources](#learning-resources)
 
 ---
 
 # About
 
-This project was built to help beginners understand Whonix and privacy-focused environments in a practical way.
+This project was created to help beginners understand Whonix and privacy-focused environments in a practical and visual way.
 
 ---
 
-# What is Whonix
+# What is Whonix?
 
-Whonix is a privacy-focused operating system that routes traffic through the Tor network using:
-- Gateway
-- Workstation
+Whonix is a privacy-focused operating system designed to route all traffic through the Tor network using two isolated virtual machines:
+
+- Whonix Gateway
+- Whonix Workstation
+
+```txt
+User → Workstation → Gateway → Tor → Internet
+```
 
 ---
 
 # Installation
 
-## Download Required Software
+## Step 1 — Install VirtualBox
 
-### Whonix
-https://www.whonix.org
-
-### VirtualBox
+Official Website:
 https://www.virtualbox.org
 
-### Wireshark
-https://www.wireshark.org
+### Example
 
-## Installation Checklist
+![VirtualBox Setup](images/virtualbox-install.png)
+
+---
+
+## Step 2 — Download Whonix
+
+Official Download:
+https://www.whonix.org/wiki/Download
+
+Download:
+- Gateway
+- Workstation
+
+---
+
+## Step 3 — Import Virtual Machines
+
+Open:
+
+```txt
+File → Import Appliance
+```
+
+Import:
+- Gateway
+- Workstation
+
+### Example
+
+![Import Appliance](images/import-whonix.png)
+
+---
+
+## Step 4 — Start Gateway First
+
+Always start:
+
+1. Gateway
+2. Workstation
+
+---
+
+# Installation Checklist
 
 - [ ] Install VirtualBox
 - [ ] Download Whonix
@@ -67,53 +115,151 @@ https://www.wireshark.org
 - [ ] Import Workstation
 - [ ] Start Gateway
 - [ ] Verify Tor Connection
-- [ ] Open Wireshark
-- [ ] Check Traffic
-     
----
-
-# VirtualBox Setup
-
-1. Install VirtualBox
-2. Import Gateway
-3. Import Workstation
-4. Start Gateway first
+- [ ] Install Wireshark
+- [ ] Analyze Traffic
 
 ---
 
 # Wireshark Verification
 
-Wireshark can help verify:
-- Traffic routing
-- Tor connections
+Wireshark helps verify:
+- Tor traffic
 - DNS behavior
+- Packet flow
+- Network routing
+
+---
+
+## Install Wireshark
+
+Official Website:
+https://www.wireshark.org
+
+Download:
+https://www.wireshark.org/download.html
+
+During installation:
+- Install Npcap
+- Keep default settings
+
+---
+
+## Start Capturing
+
+1. Open Wireshark
+2. Select your active adapter
+3. Start capture
+4. Open Tor Browser inside Whonix
+
+### Example
+
+![Wireshark](images/wireshark-example.png)
+
+---
+
+# Helpful Filters
+
+## TCP
+
+```txt
+tcp
+```
+
+## DNS
+
+```txt
+dns
+```
+
+## Tor
+
+```txt
+tor
+```
+
+---
+
+# Comparison Table
+
+| Feature | Whonix | Tor Browser | VPN |
+|---|---|---|---|
+| Full System Routing | ✅ | ❌ | ❌ |
+| Traffic Isolation | ✅ | ❌ | ❌ |
+| Identity Separation | ✅ | ❌ | ❌ |
+| Beginner Friendly | ⚠️ | ✅ | ✅ |
 
 ---
 
 # Security Tips
 
 - Keep systems updated
-- Avoid suspicious downloads
 - Use strong passwords
+- Avoid suspicious downloads
 - Separate identities
+- Avoid random browser extensions
 
 ---
 
 # Troubleshooting
 
 ## No Internet
-- Restart Gateway
-- Check network adapter
 
-## Tor Issues
-- Sync time
-- Restart Whonix
+Possible fixes:
+- Restart Gateway
+- Check VirtualBox network settings
+- Verify host internet access
 
 ---
 
-# Learning Resources
+## Tor Connection Failed
 
-- Whonix Documentation
-- Tor Project
-- Linux Basics
-- Networking Fundamentals
+Possible fixes:
+- Sync system time
+- Restart Whonix
+- Check firewall settings
+
+---
+
+# Folder Structure
+
+```txt
+whonix-beginner-guide/
+│
+├── README.md
+├── README_AR.md
+├── images/
+├── verification/
+├── troubleshooting/
+└── resources/
+```
+
+---
+
+# Recommended Tools
+
+- https://www.whonix.org
+- https://www.virtualbox.org
+- https://www.wireshark.org
+- https://www.torproject.org
+
+---
+
+# Future Improvements
+
+- [x] Installation Guide
+- [x] Wireshark Verification
+- [ ] Advanced Networking
+- [ ] OPSEC Section
+- [ ] Qubes OS Integration
+
+---
+
+# Disclaimer
+
+This project is intended for educational and privacy-awareness purposes only.
+
+---
+
+# Author
+
+Created by Feras Hamamdeh
