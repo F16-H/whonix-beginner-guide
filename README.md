@@ -55,6 +55,11 @@ User → Workstation → Gateway → Tor → Internet
 ```
 
 ---
+## Architecture Overview
+
+<p align="center">
+  <img src="images/whonix-network-en.png" width="100%" />
+</p>
 
 # Installation
 
