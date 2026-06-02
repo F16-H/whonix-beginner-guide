@@ -65,7 +65,7 @@ https://www.virtualbox.org
 
 ### Example
 ![](images/virtualbox-install.png)
-![VirtualBox Setup](images/virtualbox-install.png)
+![VirtualBox Setup](https://www.virtualbox.org/wiki/Documentation))
 
 ---
 
