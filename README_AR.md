@@ -1,7 +1,7 @@
 # دليل Whonix للمبتدئين
 
 <p align="center">
-  <img src="images/banner.png" width="100%" />
+  <img src="images/banner1.png" width="100%" />
 </p>
 
 <h1 align="center">دليل Whonix للمبتدئين</h1>
@@ -54,7 +54,11 @@ Whonix هو نظام تشغيل يركز على الخصوصية، مصمم لت
 ```
 
 ---
+## نظرة على البنية الشبكية
 
+<p align="center">
+  <img src="images/whonix-network-ar.png" width="100%" />
+</p>
 # التثبيت
 
 ## الخطوة 1 — تثبيت VirtualBox
